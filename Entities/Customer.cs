@@ -11,10 +11,17 @@ namespace Pizaa_Restaurant.Entities
     {
         [Key]
         public int CustomerId { get; set; }
+<<<<<<< HEAD
         public string Name { get; set; }            
         public string Phone { get; set; }        
        
         public string Address { get; set; }        
+=======
+        public string Name { get; set; }            // اسم العميل
+        public string Phone { get; set; }           // رقم الهاتف
+       
+        public string Address { get; set; }         // العنوان
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
         public ICollection<Order> Orders { get; set; }=new List<Order>();
 
     }

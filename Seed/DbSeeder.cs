@@ -16,10 +16,13 @@ namespace Pizaa_Restaurant.Seed
 
         public void Seed()
         {
+<<<<<<< HEAD
             
             _dbContext.Employees.RemoveRange(_dbContext.Employees);
             _dbContext.SaveChanges(); 
 
+=======
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
             if (!_dbContext.Pizzas.Any())
             {
                 _dbContext.Pizzas.AddRange(
@@ -42,6 +45,7 @@ namespace Pizaa_Restaurant.Seed
                         Price = 11.99m
                     }
                 );
+<<<<<<< HEAD
                 _dbContext.SaveChanges(); 
             }
 
@@ -98,6 +102,57 @@ namespace Pizaa_Restaurant.Seed
                 );
                 _dbContext.SaveChanges();
             }
+=======
+            }
+                _dbContext.SaveChanges(); // متنساش تحفظ البيانات في الداتا بيز
+                if (!_dbContext.Employees.Any())
+                {
+                    _dbContext.Employees.AddRange(
+                        new Employee
+                        {
+                            Name = "Mohamed Sami ",
+                            Role="Cheif"
+                        },
+                        new Employee
+                        {
+                            Name = "Momen Mostafa ",
+                            Role = "Cheif"
+
+                        },
+                        new Employee
+                        {
+                            Name="Ibrahim Mohamed",
+                            Role="Cheif"
+                        },
+                        new Employee
+                        {
+                            Name = "Maher Ibrahim",
+                            Role = "Delivery"
+                        }
+                        );
+                }
+             
+                if (!_dbContext.Customers.Any())
+                {
+                    _dbContext.Customers.AddRange(
+                        new Customer
+                        {
+                            Name = "Mohamed Samir ",
+                            Address = "6October city,Giza ",
+                            Phone = "010048524"
+                        },
+                         new Customer
+                         {
+                             Name = "Mohamed gammal ",
+                             Address = "Nasr City ",
+                             Phone = "011146845"
+                         }
+                        );
+                }
+
+                _dbContext.SaveChanges();
+            
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
         }
     }
 }

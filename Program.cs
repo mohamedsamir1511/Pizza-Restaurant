@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 ﻿using Microsoft.EntityFrameworkCore;
 using Pizaa_Restaurant.Context;
 using Pizaa_Restaurant.Entities;
 using Pizaa_Restaurant.Seed;
 using System;
 using System.Linq;
+=======
+﻿using System;
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
 
 namespace Pizaa_Restaurant
 {
@@ -11,6 +15,7 @@ namespace Pizaa_Restaurant
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             using var dbContext = new AppDbContext();
             var seed = new DbSeeder(dbContext);
             seed.Seed(); // إضافة البيانات الأولية لو مش موجودة
@@ -327,6 +332,10 @@ namespace Pizaa_Restaurant
             {
                 Console.WriteLine("Invalid Pizza ID!");
             }
+=======
+            Console.WriteLine("Hello, Pizaa Restaurant!");
+            // هنا يمكنك إضافة أي أكواد أخرى تريد تنفيذها عند بدء التطبيق.
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
         }
     }
 }

@@ -26,9 +26,15 @@ namespace Pizaa_Restaurant.Context
 
             base.OnModelCreating(modelBuilder);
 
+<<<<<<< HEAD
           
             modelBuilder.Entity<OrderItem>()
                 .HasKey(oi => new { oi.OrderId, oi.PizzaId }); //Composite Key 
+=======
+            // تعريف العلاقة بين Pizza و OrderItem
+            modelBuilder.Entity<OrderItem>()
+                .HasKey(oi => new { oi.OrderId, oi.PizzaId }); // مفتاح مركب
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
 
             modelBuilder.Entity<OrderItem>()
                 .HasOne(oi => oi.Pizza)

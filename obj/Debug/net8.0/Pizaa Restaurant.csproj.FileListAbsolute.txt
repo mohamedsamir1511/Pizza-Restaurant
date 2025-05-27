@@ -129,4 +129,7 @@ D:\.netProjects\Pizaa Restaurant\Pizaa Restaurant\obj\Debug\net8.0\refint\Pizaa 
 D:\.netProjects\Pizaa Restaurant\Pizaa Restaurant\obj\Debug\net8.0\Pizaa Restaurant.pdb
 D:\.netProjects\Pizaa Restaurant\Pizaa Restaurant\obj\Debug\net8.0\Pizaa Restaurant.genruntimeconfig.cache
 D:\.netProjects\Pizaa Restaurant\Pizaa Restaurant\obj\Debug\net8.0\ref\Pizaa Restaurant.dll
+<<<<<<< HEAD
 D:\.netProjects\Pizaa Restaurant\Pizaa Restaurant\obj\Debug\net8.0\Pizaa Restaurant.sourcelink.json
+=======
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587

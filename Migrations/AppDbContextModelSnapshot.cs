@@ -44,7 +44,11 @@ namespace Pizaa_Restaurant.Migrations
 
                     b.HasKey("CustomerId");
 
+<<<<<<< HEAD
                     b.ToTable("Customers", (string)null);
+=======
+                    b.ToTable("Customers");
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
                 });
 
             modelBuilder.Entity("Pizaa_Restaurant.Entities.Employee", b =>
@@ -59,14 +63,18 @@ namespace Pizaa_Restaurant.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+=======
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -74,6 +82,11 @@ namespace Pizaa_Restaurant.Migrations
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employees", (string)null);
+=======
+                    b.HasKey("EmployeeId");
+
+                    b.ToTable("Employees");
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
                 });
 
             modelBuilder.Entity("Pizaa_Restaurant.Entities.Ingredient", b =>
@@ -94,7 +107,11 @@ namespace Pizaa_Restaurant.Migrations
 
                     b.HasKey("IngredientId");
 
+<<<<<<< HEAD
                     b.ToTable("Ingredients", (string)null);
+=======
+                    b.ToTable("Ingredients");
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
                 });
 
             modelBuilder.Entity("Pizaa_Restaurant.Entities.Order", b =>
@@ -122,7 +139,11 @@ namespace Pizaa_Restaurant.Migrations
 
                     b.HasIndex("CustomerId");
 
+<<<<<<< HEAD
                     b.ToTable("Orders", (string)null);
+=======
+                    b.ToTable("Orders");
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
                 });
 
             modelBuilder.Entity("Pizaa_Restaurant.Entities.OrderItem", b =>
@@ -143,7 +164,11 @@ namespace Pizaa_Restaurant.Migrations
 
                     b.HasIndex("PizzaId");
 
+<<<<<<< HEAD
                     b.ToTable("OrderItems", (string)null);
+=======
+                    b.ToTable("OrderItems");
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
                 });
 
             modelBuilder.Entity("Pizaa_Restaurant.Entities.Pizza", b =>
@@ -167,7 +192,11 @@ namespace Pizaa_Restaurant.Migrations
 
                     b.HasKey("PizzaId");
 
+<<<<<<< HEAD
                     b.ToTable("Pizzas", (string)null);
+=======
+                    b.ToTable("Pizzas");
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
                 });
 
             modelBuilder.Entity("Pizaa_Restaurant.Entities.Order", b =>

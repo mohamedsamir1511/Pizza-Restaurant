@@ -11,12 +11,21 @@ namespace Pizaa_Restaurant.Entities
     {
         [Key]
         public int OrderId { get; set; }
+<<<<<<< HEAD
         public int CustomerId { get; set; }         
         public DateTime OrderDate { get; set; }      
         public decimal TotalPrice { get; set; }      
         public string Status { get; set; }          
         public ICollection<OrderItem> OrderItems { get; set; }=new List<OrderItem>();
         public Customer Customer { get; set; } 
+=======
+        public int CustomerId { get; set; }         // FK للعميل
+        public DateTime OrderDate { get; set; }     // تاريخ الطلب
+        public decimal TotalPrice { get; set; }     // السعر الإجمالي
+        public string Status { get; set; }          // حالة الطلب (مثل "قيد التحضير", "جاهز للتسليم")
+        public ICollection<OrderItem> OrderItems { get; set; }=new List<OrderItem>();
+        public Customer Customer { get; set; } // إضافة العلاقة مع Customer
+>>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
 
 
     }
