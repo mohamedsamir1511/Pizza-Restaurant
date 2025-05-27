@@ -17,8 +17,8 @@ namespace Pizaa_Restaurant.Entities
         public int PizzaId { get; set; }            // FK للبيتزا
         public int Quantity { get; set; }           // الكمية المطلوبة
 
-        public Order Order { get; set; }            // الربط بالطلب
-        public Pizza Pizza { get; set; }            // الربط بالبيتزا
+        public Order Order { get; set; }            // الربط بالطلب Navigational Property 
+        public Pizza Pizza { get; set; }            // الربط بالبيتزا Navigational Property
 
 
     }

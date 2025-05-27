@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pizaa_Restaurant.Entities;
-using Pizaa_Restaurant.Context; // تأكد إنك مستورد الـ DbContext الخاص بيك
+using Pizaa_Restaurant.Context;
 using System;
+using System.Linq;
 
 namespace Pizaa_Restaurant.Seed
 {
@@ -16,13 +17,11 @@ namespace Pizaa_Restaurant.Seed
 
         public void Seed()
         {
-<<<<<<< HEAD
-            
+            // Clear old Employees if needed (be cautious in real apps)
             _dbContext.Employees.RemoveRange(_dbContext.Employees);
-            _dbContext.SaveChanges(); 
+            _dbContext.SaveChanges();
 
-=======
->>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
+            // Seed Pizzas
             if (!_dbContext.Pizzas.Any())
             {
                 _dbContext.Pizzas.AddRange(
@@ -45,23 +44,22 @@ namespace Pizaa_Restaurant.Seed
                         Price = 11.99m
                     }
                 );
-<<<<<<< HEAD
-                _dbContext.SaveChanges(); 
             }
 
+            // Seed Employees
             if (!_dbContext.Employees.Any())
             {
                 _dbContext.Employees.AddRange(
                     new Employee
                     {
-                        Name = "Mohamed Sami ",
+                        Name = "Mohamed Sami",
                         Role = "Chef",
                         Username = "Mohamed",
                         Password = "1234"
                     },
                     new Employee
                     {
-                        Name = "Momen Mostafa ",
+                        Name = "Momen Mostafa",
                         Role = "Chef",
                         Username = "Momen",
                         Password = "1234"
@@ -81,78 +79,28 @@ namespace Pizaa_Restaurant.Seed
                         Password = "1234"
                     }
                 );
-                _dbContext.SaveChanges(); 
             }
 
+            // Seed Customers
             if (!_dbContext.Customers.Any())
             {
                 _dbContext.Customers.AddRange(
                     new Customer
                     {
-                        Name = "Mohamed Samir ",
-                        Address = "6October city,Giza ",
+                        Name = "Mohamed Samir",
+                        Address = "6 October City, Giza",
                         Phone = "010048524"
                     },
                     new Customer
                     {
-                        Name = "Mohamed Gammal ",
-                        Address = "Nasr City ",
+                        Name = "Mohamed Gammal",
+                        Address = "Nasr City",
                         Phone = "011146845"
                     }
                 );
-                _dbContext.SaveChanges();
             }
-=======
-            }
-                _dbContext.SaveChanges(); // متنساش تحفظ البيانات في الداتا بيز
-                if (!_dbContext.Employees.Any())
-                {
-                    _dbContext.Employees.AddRange(
-                        new Employee
-                        {
-                            Name = "Mohamed Sami ",
-                            Role="Cheif"
-                        },
-                        new Employee
-                        {
-                            Name = "Momen Mostafa ",
-                            Role = "Cheif"
 
-                        },
-                        new Employee
-                        {
-                            Name="Ibrahim Mohamed",
-                            Role="Cheif"
-                        },
-                        new Employee
-                        {
-                            Name = "Maher Ibrahim",
-                            Role = "Delivery"
-                        }
-                        );
-                }
-             
-                if (!_dbContext.Customers.Any())
-                {
-                    _dbContext.Customers.AddRange(
-                        new Customer
-                        {
-                            Name = "Mohamed Samir ",
-                            Address = "6October city,Giza ",
-                            Phone = "010048524"
-                        },
-                         new Customer
-                         {
-                             Name = "Mohamed gammal ",
-                             Address = "Nasr City ",
-                             Phone = "011146845"
-                         }
-                        );
-                }
-
-                _dbContext.SaveChanges();
-            
->>>>>>> ad232dab4c3e600c9aef0dbae34339ccb7d2c587
+            _dbContext.SaveChanges();
         }
     }
 }
