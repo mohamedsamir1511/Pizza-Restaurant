@@ -1,0 +1,25 @@
+# Ignore build output folders
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore Visual Studio Code settings folder (لو بتستخدم VSCode)
+.vscode/
+
+# Ignore NuGet packages folder
+packages/
+
+# Ignore Rider IDE files (لو بتستخدم Rider)
+.idea/
+
+# Ignore executable files and debug symbols
+*.exe
+*.dll
+*.pdb
